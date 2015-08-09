@@ -13,10 +13,9 @@ public class Resource extends RESOURCE_TYPE {
     private String resourceName;
     
     
-    public Resource(String name, int type, String resourceCode){
+    public Resource(String name, int type){
         this.resourceName = name;
         this.resourceType = type;
-        this.resourceCode = resourceCode;
     }
     
     
@@ -28,8 +27,12 @@ public class Resource extends RESOURCE_TYPE {
         return this.resourceType;
     }
     
-    public String getResourceId(){
-        return this.getResourceId();
+    public String getResourceCode(){
+        return this.getResourceCode();
+    }
+    
+    public void setResourceCode(String resourceCode){
+        this.resourceCode = resourceCode;
     }
     
 }

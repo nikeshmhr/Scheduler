@@ -8,10 +8,16 @@ public class Classroom extends Resource {
     
     private int capacity;
     
-    public Classroom(String name, int type, String resCode, int capacity){
-        super(name, type, resCode);
+    public Classroom(String name, int type, int capacity){
+        super(name, type);
         
         this.capacity = capacity;
+    }
+    
+    public Classroom(String name, int type, int capacity, String resCode){
+        super(name, type);
+        
+        setResourceCode(resCode);
     }
     
     public void setCapacity(int capacity){
