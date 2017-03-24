@@ -13,6 +13,7 @@ public class LoginTest {
     public static void main(String[] args) {
         LoginView lv = new LoginView();
         LoginModel lm = new LoginModel();
+        
         LoginController lc = new LoginController(lv, lm);
     }
 
