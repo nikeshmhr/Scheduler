@@ -14,7 +14,6 @@ public class LoginTest {
         LoginView lv = new LoginView();
         LoginModel lm = new LoginModel();
         LoginController lc = new LoginController(lv, lm);
-        System.out.println("Testing GIT Fork"):
     }
 
 }
